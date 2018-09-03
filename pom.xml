@@ -6,10 +6,14 @@
 	<groupId>com.github.daleychao</groupId>
 	<artifactId>disconf-diff</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
 	<name>disconf-diff</name>
 	<description>This is a file difference comparison tool that works with disconf</description>
+
+	<modules>
+		<module>diff-admin</module>
+	</modules>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
