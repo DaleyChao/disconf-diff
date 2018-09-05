@@ -3,13 +3,26 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.github.daleychao</groupId>
+	<parent>
+		<artifactId>disconf-diff</artifactId>
+		<groupId>com.github.daleychao</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
 	<artifactId>diff-admin</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<!--<version>0.0.1-SNAPSHOT</version>-->
+	<packaging>war</packaging>
 
 	<name>diff-admin</name>
 	<description>client</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.github.daleychao</groupId>
+			<artifactId>diff-service</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<finalName>diff-admin</finalName>
@@ -20,5 +33,6 @@
 			</resource>
 		</resources>
 	</build>
+
 
 </project>
